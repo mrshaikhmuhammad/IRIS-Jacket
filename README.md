@@ -6,6 +6,7 @@
 
 <br/><br/>
 
+# IRIS — Interactive Responsive Inclusive System
 <pre>
 ██╗██████╗ ██╗███████╗
 ██║██╔══██╗██║██╔════╝
@@ -15,9 +16,6 @@
 ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
 </pre>
 </div>
-
-
-# IRIS — Intelligent Real-time Indoor/outdoor Safety System
 
 ## The Problem We're Solving
 
@@ -309,7 +307,7 @@ Examples:
 
 | Protocol | Latency | Overhead | Reliability |
 |---|---|---|---|
-| **UDP** ✅ | ~1ms | Zero | Fire-and-forget (fine for haptics) |
+| **UDP** | ~1ms | Zero | Fire-and-forget (fine for haptics) |
 | MQTT | ~50ms | Medium | Guaranteed delivery |
 | HTTP | ~100ms+ | High | Request/response overhead |
 
@@ -317,7 +315,7 @@ For haptic feedback, **speed beats reliability** — a missed vibration packet i
 
 ---
 
-## 🚀 Setup & Installation <a name="setup"></a>
+## Setup & Installation <a name="setup"></a>
 
 ### Prerequisites
 
@@ -420,18 +418,18 @@ az cognitiveservices account keys list \
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 IRIS-Jacket/
 │
-├── 📄 main.ino                  # ESP32 firmware (Arduino C++)
+├── main.ino                  # ESP32 firmware (Arduino C++)
 │   ├── class Ultrasonic          # HC-SR04 sensor abstraction
 │   ├── class Vibration           # PWM motor + math model
 │   ├── connectWiFi()             # mDNS + UDP setup
 │   └── processCommand()          # UDP command parser
 │
-├── 📄 vision.py                 # Raspberry Pi main script (Python)
+├── vision.py                 # Raspberry Pi main script (Python)
 │   ├── init_*()                  # System initialization
 │   ├── capture_image()           # Pi Camera capture
 │   ├── analyze_image()           # Azure Vision API
@@ -439,15 +437,15 @@ IRIS-Jacket/
 │   ├── send_haptic_feedback()    # UDP → ESP32
 │   └── main_loop()               # 3-second cycle
 │
-├── 📷 circuit/
+├── circuit/
 │   └── esp32_circuit.png         # Tinkercad wiring diagram
 │
-└── 📖 README.md
+└── README.md
 ```
 
 ---
 
-## 🔁 Complete System Flow
+## Complete System Flow
 
 ```
 ┌────────────────────────────────────────────────────────────┐
@@ -471,7 +469,7 @@ IRIS-Jacket/
 
 ---
 
-## 📄 License
+## License
 
 ```
 MIT License — Free to use, modify, and distribute with attribution.
