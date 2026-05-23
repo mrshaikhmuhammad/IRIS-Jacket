@@ -111,7 +111,7 @@ Over **285 million people** worldwide live with visual impairment. Existing aids
 
 ---
 
-## ⚡ Circuit & Pin Mapping
+## Circuit & Pin Mapping
 
 ### Ultrasonic Sensors → ESP32
 
