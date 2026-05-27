@@ -154,7 +154,7 @@ ESP32 GPIO ──[1kΩ]───► NPN Base
 
 ## Mathematical Model — Directional Vibration <a name="math-model"></a>
 
-This is the core innovation. Rather than simply turning motors on/off, IRIS uses **trigonometric vector projection** to compute *exactly* how much each motor should vibrate based on two distance inputs. **[View interactive 3D model on Desmos](https://www.desmos.com/3d/mc356nsr3d)**
+This is the core innovation. Rather than simply turning motors on/off, IRIS uses **trigonometric vector projection** to compute *exactly* how much each motor should vibrate based on two distance inputs. [![IRIS Math Model](asset/vibration%20intensity%20model.png)](https://www.desmos.com/3d/mc356nsr3d)
 
 ### The Formula
 
